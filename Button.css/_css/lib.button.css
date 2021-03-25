@@ -1,0 +1,210 @@
+/* BUTTON EXPAND*/
+#buttonExpand{
+    top: 50px;
+    left: 60px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: rgb(174, 0, 255);
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: medium;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#buttonExpand:active{
+    top: 51px;
+}
+#buttonLine{
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background: white;
+    bottom: 0px;
+    display: none;
+    animation: expandIn 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expandIn {
+    0%{
+        width: 3%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* BUTTON GLASS */
+#buttonGlass{
+    top: 50px;
+    left: 310px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: rgb(174, 0, 255);
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: medium;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#buttonGlass:active{
+    top: 51px;
+}
+#glass{
+    position: absolute;
+    width: 50%;
+    left: -20px;
+    display: none;
+    animation: glassIn 0.4s linear;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes glassIn {
+    0%{
+        left: -100;
+    }
+    100%{
+        left: 300px;
+    }
+}
+
+/* END */
+
+/* BUTTON COLLISION */
+
+#buttonCollision{
+    top: 50px;
+    left: 560px;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: rgb(174, 0, 255);
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: medium;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+    
+}
+#buttonCollision:active{
+    top: 51px;
+}
+#buttonCollision:hover{
+    color: rgb(174, 0, 255);
+}
+#ball01{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: white;
+    left: -10px;
+    animation: ballLeft 0.2s linear;
+    animation-fill-mode: forwards;
+    display: none;
+}
+
+#ball02{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: white;
+    right: -100px;
+    display: none;
+    animation: ballRight 0.2s linear;
+    animation-fill-mode: forwards;
+    
+}
+
+#ballMaster{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50px;
+    background: white;
+    display: none;
+    animation: ballMaster 0.2s linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    
+}
+
+@keyframes ballLeft {
+    0%{
+        left: -10;
+    }
+    100%{
+        left: 200px;
+    }
+}
+
+@keyframes ballRight {
+    0%{
+        right: -10px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+@keyframes ballMaster {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    30%{
+        width: 0px;
+        height: 0px;
+    }
+    40%{
+        width: 0px;
+        height: 0px;
+    }
+    60%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 700px){
+    #buttonGlass{
+        left: 60px;
+        top: 150px;
+    }
+    #buttonCollision{
+        left: 60px;
+        top: 250px;
+    }
+}

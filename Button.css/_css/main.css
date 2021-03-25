@@ -1,0 +1,155 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(114, 20, 161);
+    overflow-x: hidden;
+    
+}
+#title{
+    position: absolute;
+    color: white;
+    width: 130%;
+    font-family: arial;
+    font-weight: bolder;
+    top: 30px;
+    left: 60px;
+}
+#title::selection{
+    background: white;
+    color:  rebeccapurple;
+}
+#subTitle{
+    position: absolute;
+    color: white;
+    font-size: 100%;
+    font-family: arial;
+    font-weight: initial;
+    top: 75px;
+    left: 60px;
+}
+#github-logo{
+    position: absolute;
+    width: 40px;
+    top: 60px;
+    right: 480px;
+    cursor: pointer;
+}
+#github-logo:hover{
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 50px;
+    padding: 5px; 
+    top: 55px;
+    right: 475px;
+}
+
+#buttonDownload{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bolder;
+    top: 60px;
+    left: 350px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+#buttonDownload:hover{
+    text-decoration: underline;
+    
+}
+#buttonDocs{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bolder;
+    top: 60px;
+    left: 550px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+#buttonDocs:hover{
+    text-decoration: underline;
+    
+}
+#buttonTypes{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bolder;
+    top: 60px;
+    left: 700px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+#buttonTypes:hover{
+    text-decoration: underline;
+    
+}
+#buttonView{
+    position: absolute;
+    width: 800px;
+    height: 470px;
+    background: rgb(114, 20, 161);
+    top: 150px;
+    left: -1px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttonView::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(106, 0, 155);
+    border-radius: 0px 5px 5px 0px;
+  }
+  #buttonView::-webkit-scrollbar-thumb{
+    background: rgb(157, 9, 226);
+    border-radius: 0px 5px 5px 0px;
+  }
+  #buttonView::-webkit-scrollbar-thumb:hover{
+    background: rgb(153, 12, 189);
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+  }
+  #buttonView::-webkit-scrollbar-thumb:active{
+    background: rgb(161, 23, 196);
+  }
+
+
+@media (max-width: 700px){
+    body{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title{
+        left: 30px;
+    }
+    #subTitle{
+        left: 30px;
+    }
+    #github-logo{
+        left: 200px;
+    }
+    #buttonView{
+        position: relative;
+        top: 650px;
+        width: 95%;
+        background: red;
+        display: block;
+    }
+    #buttonDownload{
+        display: none;
+    }
+    #buttonDocs{
+        display: none;
+    }
+    #buttonTypes{
+        display: none;
+    }
+}

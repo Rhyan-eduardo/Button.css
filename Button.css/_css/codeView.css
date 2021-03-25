@@ -1,0 +1,132 @@
+#codeView{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(114, 20, 161);
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#codeTitle{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-family: arial;
+    font-size: 200%;
+}
+#htmlCodeArea{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    top: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#htmlCodeArea::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(106, 0, 155);
+    border-radius: 0px 5px 5px 0px;
+  }
+  #htmlCodeArea::-webkit-scrollbar-thumb{
+    background: rgb(157, 9, 226);
+    border-radius: 0px 5px 5px 0px;
+  }
+  #htmlCodeArea::-webkit-scrollbar-thumb:hover{
+    background: rgb(153, 12, 189);
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+  }
+  #htmlCodeArea::-webkit-scrollbar-thumb:active{
+    background: rgb(161, 23, 196);
+  }
+#htmlCodeInfo{
+    position: absolute;
+    border-radius: 3px;
+    color: rgb(174, 0, 255);
+    font-size: 90%;
+    top: 18px;
+    left: 30px;
+    font-family: arial;
+    font-weight: bolder;
+}
+#htmlCodeInfo2{
+    position: absolute;
+    border-radius: 3px;
+    color: rgb(174, 0, 255);
+    font-size: 90%;
+    top: 130px;
+    left: 30px;
+    font-family: arial;
+    font-weight: bolder;
+}
+#htmlCodeExample{
+    position: absolute;
+    border-radius: 3px;
+    color: rgb(174, 0, 255);
+    font-size: 70%;
+    top: 105px;
+    left: 23px;
+    font-family: arial;
+    font-weight: initial;
+    text-decoration: underline;
+}
+#htmlCode{
+    position: absolute;
+    background: #f9f9f9;
+    padding: 3px;
+    border-radius: 3px;
+    color: rgb(174, 0, 255);
+    font-size: 110%;
+    width: 85%;
+    top: 60px;
+}
+#htmlCode::selection{
+    background: rebeccapurple;
+    color: white;
+}
+#htmlCode2::selection{
+    background: rebeccapurple;
+    color: white;
+}
+#htmlCode2{
+    position: absolute;
+    background: #f9f9f9;
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(174, 0, 255);
+    font-size: 105%;
+    width: 85%;
+    top: 150px;
+}
+#htmlCodeName{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgb(174, 0, 255);
+    font-size: 120%;
+    font-family: arial;
+    font-weight: bold;
+    padding: 10px;
+
+}
+@media (max-width: 700px){
+    #codeView{
+        top: 100px;
+        left: 12px;
+        width: 340px;
+    }
+    #codeTitle{
+        left: 17px;
+    }
+}
